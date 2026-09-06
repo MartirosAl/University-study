@@ -1,0 +1,14 @@
+pushbn 1
+pop x
+push x
+write
+push x
+pushbn 1
++
+pop x
+push x
+push 100
+>=
+ji 14
+jmp 3
+end

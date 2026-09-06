@@ -1,0 +1,5 @@
+10 let x = 5 + 2
+20 let y = 5 - 2
+30 let z = 5 / 2
+40 let v = 5 * 2
+50 end
