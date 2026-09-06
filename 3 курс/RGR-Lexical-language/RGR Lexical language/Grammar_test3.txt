@@ -1,0 +1,47 @@
+<PROGRAM> -> <DECLARATIONS> <PROGRAM_BODY>
+<PROGRAM_BODY> -> <STATEMENT> <PROGRAM_BODY>
+<PROGRAM_BODY> -> <STATEMENT>
+<DECLARATIONS> -> [declare] <DECL_LIST> [as] <TYPE> [;] <DECLARATIONS>
+<DECLARATIONS> -> [eps]
+<DECL_LIST> -> [V] [,] <DECL_LIST>
+<DECL_LIST> -> [V]
+<TYPE> -> [int]
+<TYPE> -> [complex]
+<STATEMENT> -> [;]
+<STATEMENT> -> [set] <ASSIGN_LIST> [;]
+<ASSIGN_LIST> -> [V] [to] <E> [,] <ASSIGN_LIST>
+<ASSIGN_LIST> -> [V] [to] <E>
+<STATEMENT> -> [while] <TEST> [do] <PROGRAM_BODY> [end] [;]
+<STATEMENT> -> [L]
+<STATEMENT> -> [goto] [;]
+<STATEMENT> -> [if] <TEST> [then] <PROGRAM_BODY> <ELSE_IF> [end] [;]
+<ELSE_IF> -> [elseif] <TEST> [then] <PROGRAM_BODY> <ELSE_IF>
+<ELSE_IF> -> [else] <PROGRAM_BODY>
+<ELSE_IF> -> [eps]
+<STATEMENT> -> [for] [V] [from] <E> [until] <E> [step] <E> [do] <PROGRAM_BODY> [end] [;]
+<STATEMENT> -> [for] [V] [from] <E> [until] <E> [do] <PROGRAM_BODY> [end] [;]
+<STATEMENT> -> [on] <E> [in] [sq(] <E> [,] <E> [sq)] [goto] [;]
+<STATEMENT> -> [cin] <INPUT_LIST> [;]
+<INPUT_LIST> -> [>>] [V] <INPUT_LIST>
+<INPUT_LIST> -> [>>] [V]
+<STATEMENT> -> [cout] <OUTPUT_LIST> [;]
+<OUTPUT_LIST> -> [<<] <E> <OUTPUT_LIST>
+<OUTPUT_LIST> -> [<<] <E>
+<STATEMENT> -> [exception] [;]
+<STATEMENT> -> [rem]
+<E> -> <E> [+] <T>
+<E> -> <E> [-] <T>
+<E> -> <T>
+<T> -> <T> [*] <F>
+<T> -> <T> [/] <F>
+<T> -> <T> [%] <F>
+<T> -> <F>
+<F> -> [(] <E> [)]
+<F> -> [C]
+<F> -> [V]
+<F> -> [arg] [(] <E> [)]
+<F> -> [abs] [(] <E> [)]
+<F> -> [complex] [(] <E> [,] <E> [)]
+<F> -> [re] [(] <E> [)]
+<F> -> [im] [(] <E> [)]
+<TEST> -> <E> [rel] <E>

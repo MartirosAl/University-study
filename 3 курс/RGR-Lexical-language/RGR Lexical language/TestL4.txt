@@ -1,0 +1,18 @@
+﻿declareHELLO_WORLD asint;
+;;;;;;;;
+<<<Коментарий
+многострочным
+	   должен
+	  быть>>>
+by do od od; goodby my 0dear fri4287_end else do;
+byebyebye by
+by-; by+;	 by>;by<=;    by==;; by%:
+by0011 0192 hdjdhd 
+Набор Русских Букв Должен Выдать Ошибку
+Это должна быть 12 строка
+<<<Mark>>? no this is comment>>>
+<<< 1234 Hi! ^%$#@!!(((^🙃^)))>>>
+<<11 18>>
+<<11D18>>_hi
+JO[10][10 10 h][[]]
+get(2,5)
